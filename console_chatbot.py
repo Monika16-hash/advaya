@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set the OpenAI API key
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Banking information database
 banking_info = {
